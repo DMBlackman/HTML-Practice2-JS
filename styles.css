@@ -387,7 +387,10 @@
 
   .main__img--container {
     display: flex;
-    width: 425px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
   }
 
   .main__content {
@@ -411,6 +414,9 @@
 }
 
 @media screen and (max-width: 480px) {
+  .main__img--container {
+    align-items: center;
+  }
   .main__img--card {
     width: 250px;
     height: 250px;
@@ -533,3 +539,17 @@
   transition: 0.3s ease-in;
   cursor: pointer;
 }
+
+@media screen and (max-width: 1300px) {
+  .services__wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .services__wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* footer CSS*/
